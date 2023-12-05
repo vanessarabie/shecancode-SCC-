@@ -35,4 +35,12 @@ let testObj = {
  console.log(user1[0],user1[1]);
 
 
+ import { WorkOS } from '@workos-inc/node';
+
+const workos = new WorkOS('sk_example_123456789');
+
+const challenge = await workos.mfa.challengeFactor({
+  authenticationFactorId: 'auth_factor_01FVYZ5QM8N98T9ME5BCB2BBMJ',
+});
+
  
